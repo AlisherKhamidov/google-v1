@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск</title>
+  <style>
+    .search-section {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .search-input {
+      width: 80%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .search-submit {
+      display: block;
+      width: 80%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #BB1919;
+      /* Цвет кнопки */
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .search-submit:hover {
+      background-color: #8C0000;
+      /* Цвет кнопки при наведении */
+    }
+    .logo {
+      margin-bottom: 20px; /* Добавим немного отступа снизу */
+    }
+  </style>
+</head>
+
+<body>
+  <section class="search-section">
+    <form class="form-container" action="https://www.google.com/search" method="GET">
+      <img class="logo" src="./img/logo.svg" alt="Логотип">
+      <label class="search-label" for="searchInput">Введите ваш запрос</label>
+      <input class="search-input" id="searchInput" type="text" name="q" placeholder="Ваш запрос">
+      <button class="search-submit" type="submit">Искать</button>
+    </form>
+  </section>
+</body>
+
+</html>
